@@ -154,7 +154,7 @@ main .media ul > li a i {
     background-image: url("./img/backgeound.jpg");
     width: 100%;
     height: 517px;
-    background-repeat: no-rsepeat;
+    background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }

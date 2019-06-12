@@ -55,38 +55,48 @@
                 </div>
             </div>
             <footer class="media">
-                <ul>
-                    <li><a href="#">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-github"></use>
-                        </svg>
-                    </a></li>
-                    <li><a href="#">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-weixin"></use>
-                        </svg>
-                    </a></li>
-                    <li><a href="#">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-google"></use>
-                        </svg>
-                    </a></li>
-                    <li><a href="#">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-qq-copy-copy"></use>
-                        </svg>
-                    </a></li>
-                    <li><a href="#">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-weibo"></use>
-                        </svg>
-                    </a></li>
-                    <li><a href="#">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-zhifubao"></use>
-                        </svg>
-                    </a></li>
-                </ul>
+                   <ul>
+                       <li><a href="https://github.com/lizeze" target="_blank">
+                           <svg class="icon" aria-hidden="true">
+                               <use xlink:href="#icon-github"></use>
+                           </svg>
+                       </a></li>
+                       <li id="weixinBar" style="position: relative">
+                           <a href="javascript:void(0)">
+                               <svg class="icon" aria-hidden="true">
+                                   <use xlink:href="#icon-weixin"></use>
+                               </svg>
+                           </a>
+                           <img id="weixinImg" src="./img/weixin.jpg" alt="" width="100px" height="100px"
+                                style="position: absolute;top:-80px; left: 0px;display: none">
+
+                       </li>
+                       <li id="qqBar" style="position: relative"><a href="javascript:void(0)">
+                           <svg class="icon" aria-hidden="true">
+                               <use xlink:href="#icon-qq-copy-copy"></use>
+                           </svg>
+                       </a>
+                           <img id="qqImg" src="./img/qq.jpg" alt="" width="100px" height="100px"
+                                style="position: absolute;top:-80px; left: 0px;display: none"></li>
+                       <li><a href="https://www.zhihu.com/people/ze-ze-6-77/posts" target="_blank">
+                           <svg class="icon" aria-hidden="true">
+                               <use xlink:href="#icon-zhihu"></use>
+                           </svg>
+                       </a></li>
+
+                       <li><a href="https://juejin.im/user/5b2c545ce51d4558af402efa" target="_blank">
+                           <svg class="icon" aria-hidden="true">
+                               <use xlink:href="#icon-juejin"></use>
+                           </svg>
+                       </a></li>
+                       <li id="zhifubaoBar" style="position: relative"><a href="#">
+                           <svg class="icon" aria-hidden="true">
+                               <use xlink:href="#icon-zhifubao"></use>
+                           </svg>
+                       </a>
+                           <img id="zhifubaoImg" src="./img/zhifubao.jpg" alt="" width="100px" height="100px"
+                                style="position: absolute;top:-80px; left: 0px;display: none"></li>
+                   </ul>
             </footer>
         </div>
     </div>
@@ -104,7 +114,6 @@
 </div>
 
 <section class="skills" id="skills">
-
     <h2>技能</h2>
     <div class="skills-inner">
         <ul>
@@ -147,6 +156,25 @@
         </ul>
     </div>
 </section>
+
+<section class="works">
+    <div class="works-inner">
+        <h2>作品</h2>
+        <div style="display: inline-block">
+            <nav>
+                <ul>
+                    <li id="framework1">全部</li>
+                    <li id="framework2">框架</li>
+                    <li id="framework3">源生JS</li>
+                </ul>
+            </nav>
+            <div class="bar">
+                <div id="workBar" class="bar-inner state-1"></div>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
+<script src="./js/index.js"></script>
 <script src="./lib/font/iconfont.js"></script>
 </html>

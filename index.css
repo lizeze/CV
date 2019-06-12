@@ -238,14 +238,18 @@ body > .describe {
 body > .describe > p:first-child {
     margin-bottom: 10px;
 }
+body>.describe p{
+    font-family: serif;
+}
 
-
-.skills {
+.skills,
+.works {
     text-align: center;
     margin: 0px auto;
 }
 
-.skills .skills-inner {
+.skills .skills-inner,
+.works .works-inner {
     max-width: 930px;
     margin: 0px auto;
 }
@@ -259,9 +263,10 @@ body > .describe > p:first-child {
 
 }
 
-.skills h2{
+.skills h2 {
     margin-bottom: 28px;
 }
+
 .skills ul li {
     flex: 0 0 45%;
     margin-left: 20px;
@@ -288,5 +293,61 @@ body > .describe > p:first-child {
     background: #D96F6F;
     border-radius: 2px;
 
+}
 
+.works {
+    margin-bottom: 200px;
+}
+
+.works-inner {
+    border: 1px solid red;
+
+}
+
+.works nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.works nav {
+    display: inline-block;
+}
+
+.works nav ul li {
+    margin-left: 50px;
+    cursor: pointer;
+}
+.works nav ul li:first-child{
+    margin-left: 0px;
+}
+
+.works .bar {
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    height: 10px;
+}
+
+.works .bar-inner {
+    display: inline-block;
+    height: 100%;
+    background: #D96F6F;
+    border-radius: 2px;
+    position: absolute;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+.works .bar-inner.state-1{
+    left: 0px;
+    width: 36%;
+}
+.works .bar-inner.state-2{
+    left: 87px;
+    width: 27%;
+}
+.works .bar-inner.state-3{
+    left: 169px;
+    width: 24%;
 }

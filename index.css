@@ -2,6 +2,10 @@
     margin: 0px;
     padding: 0px;
 }
+
+body{
+    background-color: #EFEFEF;
+}
 .icon {
     width: 1em;
     height: 1em;
@@ -9,6 +13,7 @@
     fill: currentColor;
     overflow: hidden;
 }
+
 li {
     list-style: none;
 }
@@ -90,7 +95,33 @@ main .card-container .card .profile-container {
 }
 
 main .profile ul li {
+    margin-top: 10px;
+
+}
+
+main .profile .welcome {
+    display: inline-block;
+    background-color: #D96F6F;
+    color: #fff;
     margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 3px 16px;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+main .profile .welcome .triangle {
+    border: 10px solid transparent;
+    border-left-color: #D96F6F;
+    border-top-width: 0px;
+    display: inline-block;
+    position: absolute;
+    left: 4px;
+    top: 100%;
+    height: 0px;
+    width: 0px;
+
 }
 
 main .profile ul li:before {
@@ -141,10 +172,9 @@ main .media ul > li {
 
 main .media ul > li a {
     background-color: transparent;
-    width: 45px;
     display: inline-block;
     border-radius: 50%;
-    padding: 5px 0px;
+    padding: 10px 10px;
 }
 
 main .media ul > li a:hover {
@@ -152,7 +182,7 @@ main .media ul > li a:hover {
 }
 
 main .media ul > li a svg {
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
 }
 
@@ -168,4 +198,24 @@ main .media ul > li a svg {
 .banner .mask {
     height: 517px;
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.download-warpper {
+    text-align: center;
+}
+
+.download-warpper .downloadPDF {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #3E4450;
+    padding: 10px 85px;
+    border: 1px solid #CBCDCF;
+    background-color: #EFEFEF;
+    transition: box-shadow 0.2s;
+}
+
+.download-warpper .downloadPDF:hover {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }

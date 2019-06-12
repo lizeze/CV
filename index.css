@@ -3,9 +3,10 @@
     padding: 0px;
 }
 
-body{
+body {
     background-color: #EFEFEF;
 }
+
 .icon {
     width: 1em;
     height: 1em;
@@ -72,15 +73,15 @@ main {
 }
 
 main .card-container {
-    display: flex;
-    justify-content: center;
+    margin: 0px auto;
+    max-width: 930px;
+
 }
 
 main .card-container .card {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    border: 1px solid rgb(61, 68, 81);
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
@@ -91,7 +92,7 @@ main .card-container .card .img {
 main .card-container .card .profile-container {
     display: flex;
     flex-grow: 0.4;
-    padding: 50px 40px;
+    padding: 60px 90px;
 }
 
 main .profile ul li {
@@ -124,8 +125,13 @@ main .profile .welcome .triangle {
 
 }
 
+main .profile ul li {
+    color: #9DA0A6;
+}
+
 main .profile ul li:before {
     font-weight: bold;
+    color: black;
 }
 
 main .profile ul li:nth-child(1):before {
@@ -218,4 +224,69 @@ main .media ul > li a svg {
 
 .download-warpper .downloadPDF:hover {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+body > .describe {
+    margin-top: 35px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    color: #2A2A2A;
+    margin-bottom: 50px;
+}
+
+body > .describe > p:first-child {
+    margin-bottom: 10px;
+}
+
+
+.skills {
+    text-align: center;
+    margin: 0px auto;
+}
+
+.skills .skills-inner {
+    max-width: 930px;
+    margin: 0px auto;
+}
+
+.skills ul {
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+
+}
+
+.skills h2{
+    margin-bottom: 28px;
+}
+.skills ul li {
+    flex: 0 0 45%;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.skills ul li:first-child {
+}
+
+.skills ul li h3 {
+    text-align: left;
+    margin-left: 14px;
+}
+
+.skills ul li .progressBar {
+    background: #F7E2E2;
+    height: 5px;
+    border-radius: 2px;
+}
+
+.skills ul li .progressBar .progress {
+    height: 100%;
+    width: 50%;
+    background: #D96F6F;
+    border-radius: 2px;
+
+
 }

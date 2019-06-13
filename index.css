@@ -238,7 +238,8 @@ body > .describe {
 body > .describe > p:first-child {
     margin-bottom: 10px;
 }
-body>.describe p{
+
+body > .describe p {
     font-family: serif;
 }
 
@@ -299,10 +300,8 @@ body>.describe p{
     margin-bottom: 200px;
 }
 
-.works-inner {
-    border: 1px solid red;
 
-}
+
 
 .works nav ul {
     display: flex;
@@ -311,13 +310,16 @@ body>.describe p{
 
 .works nav {
     display: inline-block;
+    vertical-align: top;
+    margin-top: 28px;
 }
 
 .works nav ul li {
     margin-left: 50px;
     cursor: pointer;
 }
-.works nav ul li:first-child{
+
+.works nav ul li:first-child {
     margin-left: 0px;
 }
 
@@ -339,15 +341,31 @@ body>.describe p{
     transition: all 0.3s;
 }
 
-.works .bar-inner.state-1{
+.works .bar-inner.state-1 {
     left: 0px;
     width: 36%;
 }
-.works .bar-inner.state-2{
+
+.works .bar-inner.state-2 {
     left: 87px;
     width: 27%;
 }
-.works .bar-inner.state-3{
+
+.works .bar-inner.state-3 {
     left: 169px;
     width: 24%;
+}
+
+.works .items {
+    position: relative;
+    margin-top: 30px;
+}
+
+.works .items .big,
+.works .items .small {
+    position: absolute;
+}
+
+.works .items img {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }

@@ -53,3 +53,46 @@ zhifubaoBar.onmousemove = function () {
 zhifubaoBar.onmouseleave = function () {
     zhifubaoImg.style.display = 'none'
 }
+
+window.onscroll = function () {
+
+    if (window.scrollY > 100) {
+        topNavBar.classList.add('sticky')
+    } else
+        topNavBar.classList.remove('sticky')
+
+}
+
+
+let navItems = document.querySelectorAll('#topNavBar nav ul li a');
+for (let i = 0; i < navItems.length; i++) {
+
+    navItems[i].onclick = function (e) {
+        e.preventDefault();
+        let href = e.target.getAttribute('href');
+        let element = document.querySelector(href);
+        let top = element.offsetTop;
+        let currentTop = window.scrollY;
+        let targetTop = top - 80;
+
+        function animate(time) {
+            requestAnimationFrame(animate);
+            TWEEN.update(time);
+        }
+
+        requestAnimationFrame(animate);
+
+        const coords = {y: currentTop};
+        let s = Math.abs((targetTop - currentTop) / 100 * 300);
+        console.log(s)
+        const tween = new TWEEN.Tween(coords)
+            .to({y: targetTop}, s >= 500 ? 500 : s)
+            .easing(TWEEN.Easing.Quadratic.InOut)
+            .onUpdate(() => {
+                window.scroll(0, coords.y)
+
+            })
+            .start(); // Start the tween immediately
+
+    }
+}

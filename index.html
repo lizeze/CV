@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctyPE html>
 <html lang="en">
 
 <head>
@@ -117,9 +117,10 @@
     <div class="mask"></div>
 </div>
 <main>
-    <div class="card-container" id="siteAbout">
+    <div class="card-container activeTag" id="siteAbout">
         <div class="card">
             <div class="profile-container">
+
                 <div class="img"><img src="./img/person.jpg" height="317px" alt=""></div>
                 <div class="profile">
                     <span class="welcome">Hello
@@ -195,7 +196,7 @@
     <p>技能：<strong>前端</strong>开发，<strong>C#</strong>开发，<strong>Java</strong>开发</p>
 </div>
 
-<section class="skills" id="siteSkills">
+<section class="skills activeTag" id="siteSkills">
     <h2>技能</h2>
     <div class="skills-inner">
         <ul>
@@ -238,7 +239,7 @@
         </ul>
     </div>
 </section>
-<section class="works" id="siteWork">
+<section class="works activeTag" id="siteWork">
     <div class="works-inner">
         <h2>作品</h2>
         <div style="display: inline-block">
@@ -270,11 +271,12 @@
 </body>
 <script>
 
-    setTimeout(function () {
+     setTimeout(function () {
         loading.classList.remove('active')
 
-    }, 1000 * 1)
+     }, 1000 * 1)
 </script>
+<script src="./lib/jquery.min.js"></script>
 <script src="./js/index.js"></script>
 <script src="./lib/font/iconfont.js"></script>
 <script src="./lib/Tween.min.js"></script>

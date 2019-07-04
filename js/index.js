@@ -53,16 +53,42 @@ zhifubaoBar.onmousemove = function () {
 zhifubaoBar.onmouseleave = function () {
     zhifubaoImg.style.display = 'none'
 }
-
+selectHeighLight();
 window.onscroll = function () {
 
     if (window.scrollY > 100) {
         topNavBar.classList.add('sticky')
     } else
         topNavBar.classList.remove('sticky')
+    selectHeighLight();
 
 }
+let tags = document.querySelectorAll('.activeTag');
+tags.forEach((item) => {
 
+    item.classList.add('active')
+})
+
+function selectHeighLight() {
+    let tags = document.querySelectorAll('.activeTag');
+
+    let diffList = [];
+    let i = 0;
+    let minIndex = 0;
+    for (let i = 1; i < tags.length; i++) {
+        let offsetTop = tags[minIndex].offsetTop;
+        if (i == 2) {
+            offsetTop = offsetTop - 60;
+        }
+        if (Math.abs(offsetTop - window.scrollY) > Math.abs(tags[i].offsetTop - window.scrollY)) {
+            minIndex = i;
+        }
+    }
+    $('.navBar>ul').find('li').removeClass('active')
+    $('.navBar>ul').find('li')[minIndex].classList.add('active')
+
+    tags[minIndex].classList.remove('active')
+}
 
 let navItems = document.querySelectorAll('#topNavBar nav ul li a');
 for (let i = 0; i < navItems.length; i++) {

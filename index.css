@@ -81,7 +81,8 @@ a {
     border-bottom: 3px solid transparent;
 }
 
-.topNavBar nav > ul > li:hover:after {
+.topNavBar nav > ul > li:hover:after,
+.topNavBar nav > ul > li.active:after {
     position: absolute;
     top: 100%;
     left: 0;
@@ -90,6 +91,16 @@ a {
     width: 100%;
     background: #D96F6F;
     animation: slideInLeft .3s;
+}
+
+.activeTag.active {
+
+    transform: translateY(300px)
+}
+
+.activeTag {
+    transition: all 1s;
+    transform: translate(0px);
 }
 
 @keyframes slideInLeft {
@@ -315,6 +326,7 @@ body > .describe p {
 .works .works-inner {
     max-width: 930px;
     margin: 0px auto;
+
 }
 
 .skills ul {
@@ -359,8 +371,7 @@ body > .describe p {
 }
 
 .works {
-    margin-bottom: 200px;
-    margin-top: 100px;
+    /*margin-top: 60px;*/
 }
 
 
@@ -379,6 +390,13 @@ body > .describe p {
     margin-left: 50px;
     cursor: pointer;
 }
+
+.works.activeTag.active {
+
+
+    transform: translateY(120px)
+}
+
 
 .works nav ul li:first-child {
     margin-left: 0px;
@@ -421,6 +439,8 @@ body > .describe p {
     position: relative;
     margin-top: 30px;
 }
+
+
 
 .works .items .big,
 .works .items .small {

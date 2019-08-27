@@ -33,15 +33,12 @@ a {
 }
 
 .topNavBar.sticky {
-
     z-index: 1;
     background: #fff;
     color: black;
     font-weight: bold;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-
 }
-
 
 .topNavBar-inner {
     display: flex;
@@ -65,13 +62,13 @@ a {
     color: #9A9DA1;
 }
 
-.topNavBar nav > ul {
+.topNavBar nav>ul {
     display: flex;
     height: 100%;
     align-items: center;
 }
 
-.topNavBar nav > ul > li {
+.topNavBar nav>ul>li {
     position: relative;
     font-size: 13px;
     font-weight: bold;
@@ -81,8 +78,8 @@ a {
     border-bottom: 3px solid transparent;
 }
 
-.topNavBar nav > ul > li:hover:after,
-.topNavBar nav > ul > li.active:after {
+.topNavBar nav>ul>li:hover:after,
+.topNavBar nav>ul>li.active:after {
     position: absolute;
     top: 100%;
     left: 0;
@@ -94,7 +91,6 @@ a {
 }
 
 .activeTag.active {
-
     transform: translateY(300px)
 }
 
@@ -110,26 +106,24 @@ a {
     100% {
         width: 100%;
     }
-
 }
 
-.topNavBar nav ul li > ul {
+.topNavBar nav ul li>ul {
     display: none;
     position: absolute;
     background: #fff;
     left: 0px;
     top: 100%;
     animation: slideInLeft .1s;
-
 }
 
-.topNavBar nav ul li:hover > ul {
+.topNavBar nav ul li:hover>ul {
     display: block;
     margin-top: 3px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
 }
 
-.topNavBar nav ul li:hover > ul > li {
+.topNavBar nav ul li:hover>ul>li {
     padding: 5px 10px;
     white-space: nowrap;
     color: #3c4451;
@@ -137,7 +131,7 @@ a {
     letter-spacing: 4px;
 }
 
-.topNavBar nav ul li:hover > ul > li:first-child {
+.topNavBar nav ul li:hover>ul>li:first-child {
     margin-top: 8px;
 }
 
@@ -148,7 +142,6 @@ main {
 main .card-container {
     margin: 0px auto;
     max-width: 930px;
-
 }
 
 main .card-container .card {
@@ -170,7 +163,6 @@ main .card-container .card .profile-container {
 
 main .profile ul li {
     margin-top: 10px;
-
 }
 
 main .profile .welcome {
@@ -182,7 +174,6 @@ main .profile .welcome {
     padding: 3px 16px;
     text-transform: uppercase;
     position: relative;
-
 }
 
 main .profile .welcome .triangle {
@@ -195,7 +186,6 @@ main .profile .welcome .triangle {
     top: 100%;
     height: 0px;
     width: 0px;
-
 }
 
 main .profile ul li {
@@ -210,7 +200,6 @@ main .profile ul li:before {
 main .profile ul li:nth-child(1):before {
     content: '年龄';
     margin-right: 90px;
-
 }
 
 main .profile ul li:nth-child(2):before {
@@ -243,24 +232,24 @@ main .media ul {
     background: #D96F6F;
 }
 
-main .media ul > li {
+main .media ul>li {
     margin-left: 25px;
     padding: 20px;
     text-align: center;
 }
 
-main .media ul > li a {
+main .media ul>li a {
     background-color: transparent;
     display: inline-block;
     border-radius: 50%;
     padding: 10px 10px;
 }
 
-main .media ul > li a:hover {
+main .media ul>li a:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-main .media ul > li a svg {
+main .media ul>li a svg {
     font-size: 20px;
     color: #fff;
 }
@@ -299,7 +288,7 @@ main .media ul > li a svg {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
-body > .describe {
+body>.describe {
     margin-top: 35px;
     text-align: center;
     line-height: 30px;
@@ -308,11 +297,11 @@ body > .describe {
     margin-bottom: 50px;
 }
 
-body > .describe > p:first-child {
+body>.describe>p:first-child {
     margin-bottom: 10px;
 }
 
-body > .describe p {
+body>.describe p {
     font-family: serif;
 }
 
@@ -320,13 +309,13 @@ body > .describe p {
 .works {
     text-align: center;
     margin: 0px auto;
+    margin-top: 30px;
 }
 
 .skills .skills-inner,
 .works .works-inner {
     max-width: 930px;
     margin: 0px auto;
-
 }
 
 .skills ul {
@@ -335,7 +324,6 @@ body > .describe p {
     flex-wrap: wrap;
     border: 1px solid transparent;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-
 }
 
 .skills h2 {
@@ -348,8 +336,7 @@ body > .describe p {
     margin-top: 30px;
 }
 
-.skills ul li:first-child {
-}
+.skills ul li:first-child {}
 
 .skills ul li h3 {
     text-align: left;
@@ -367,13 +354,11 @@ body > .describe p {
     width: 50%;
     background: #D96F6F;
     border-radius: 2px;
-
 }
 
 .works {
     /*margin-top: 60px;*/
 }
-
 
 .works nav ul {
     display: flex;
@@ -392,11 +377,8 @@ body > .describe p {
 }
 
 .works.activeTag.active {
-
-
     transform: translateY(120px)
 }
-
 
 .works nav ul li:first-child {
     margin-left: 0px;
@@ -440,8 +422,6 @@ body > .describe p {
     margin-top: 30px;
 }
 
-
-
 .works .items .big,
 .works .items .small {
     position: absolute;
@@ -450,6 +430,3 @@ body > .describe p {
 .works .items img {
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
-
-
-

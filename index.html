@@ -8,13 +8,12 @@
     <title>李泽泽的简历</title>
     <link rel="stylesheet" href="index.css">
     <style>
-
         .loading {
             height: 200px;
             width: 200px;
             position: relative;
         }
-
+        
         .loading::before,
         .loading::after {
             content: '';
@@ -30,11 +29,11 @@
             border-radius: 50%;
             animation: s 2s linear infinite;
         }
-
+        
         .loading::after {
             animation-delay: 1s;
         }
-
+        
         @keyframes s {
             0% {
                 width: 0px;
@@ -47,7 +46,7 @@
                 opacity: 0;
             }
         }
-
+        
         .loading-warpper {
             display: none;
             position: fixed;
@@ -56,23 +55,20 @@
             width: 100%;
             height: 100%;
             background: #888;
-
         }
-
+        
         .loading-warpper.active {
             display: flex;
             justify-content: center;
             align-items: center;
             z-index: 1;
-
-
         }
-
+        
         .main {
             display: none;
             transition: all 0.3s;
         }
-
+        
         .main.active {
             display: block;
         }
@@ -80,206 +76,211 @@
 </head>
 
 <body>
-<div id="loading" class="loading-warpper active">
-    <div class="loading"></div>
+    <div id="loading" class="loading-warpper active">
+        <div class="loading"></div>
 
 
-</div>
-<div id="topNavBar" class="topNavBar">
-    <div class="topNavBar-inner">
-        <div class="logo">
-            <span>RS</span>
-            <span>card</span>
-
-        </div>
-        <nav class="navBar">
-            <ul>
-                <li><a href="#siteAbout">关于</a></li>
-                <li><a href="#siteSkills">技能</a></li>
-                <li><a href="#siteWork">作品 </a>
-
-                </li>
-                <li><a href="#">博客 </a>
-                    <ul>
-                        <li><a href="https://www.zhihu.com/people/ze-ze-6-77/posts" target="_blank">知乎</a></li>
-                        <li><a href="https://juejin.im/user/5b2c545ce51d4558af402efa" target="_blank">掘金</a></li>
-
-                    </ul>
-                </li>
-                <li><a href="#">日历 </a></li>
-                <li><a href="#">联系方式</a></li>
-                <li><a href="#">其他 </a></li>
-            </ul>
-        </nav>
     </div>
-</div>
-<div class="banner">
-    <div class="mask"></div>
-</div>
-<main>
-    <div class="card-container activeTag" id="siteAbout">
-        <div class="card">
-            <div class="profile-container">  
+    <div id="topNavBar" class="topNavBar">
+        <div class="topNavBar-inner">
+            <div class="logo">
+                <span>RS</span>
+                <span>card</span>
 
-                
-
-                <div class="img"><img src="./img/person.jpg" height="317px" alt=""></div>
-                <div class="profile">
-                    <span class="welcome">Hello
-                    <span class="triangle"></span></span>
-                    <h1>李泽泽</h1>
-                    <p>前端开发工程师</p>
-                    <hr style="margin-top: 20px">
-                    <ul>
-                        <li>24</li>
-                        <li>北京市</li>
-                        <li>18622321433</li>
-                        <li>18622321433@163.com</li>
-                        <li>本科(非统招学信网可查)</li>
-                    </ul>
-                </div>
             </div>
-            <footer class="media">
+            <nav class="navBar">
                 <ul>
-                    <li><a href="https://github.com/lizeze" target="_blank">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-github"></use>
-                        </svg>
-                    </a></li>
-                    <li id="weixinBar" style="position: relative">
-                        <a href="javascript:void(0)">
-                            <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#icon-weixin"></use>
-                            </svg>
-                        </a>
-                        <img id="weixinImg" src="./img/weixin.jpg" alt="" width="100px" height="100px"
-                             style="position: absolute;top:-80px; left: 0px;display: none">
+                    <li><a href="#siteAbout" class="a">关于</a></li>
+                    <li><a href="#siteSkills" class="a">技能</a></li>
+                    <li><a href="#siteWork" class="a">作品 </a>
 
                     </li>
-                    <li id="qqBar" style="position: relative"><a href="javascript:void(0)">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-qq-copy-copy"></use>
-                        </svg>
-                    </a>
-                        <img id="qqImg" src="./img/qq.jpg" alt="" width="100px" height="100px"
-                             style="position: absolute;top:-80px; left: 0px;display: none"></li>
-                    <li><a href="https://www.zhihu.com/people/ze-ze-6-77/posts" target="_blank">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-zhihu"></use>
-                        </svg>
-                    </a></li>
+                    <li><a href="#">博客 </a>
+                        <ul>
+                            <li><a href="https://www.zhihu.com/people/ze-ze-6-77/posts" target="_blank">知乎</a></li>
+                            <li><a href="https://juejin.im/user/5b2c545ce51d4558af402efa" target="_blank">掘金</a></li>
 
-                    <li><a href="https://juejin.im/user/5b2c545ce51d4558af402efa" target="_blank">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-juejin"></use>
-                        </svg>
-                    </a></li>
-                    <li id="zhifubaoBar" style="position: relative"><a href="#">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-zhifubao"></use>
-                        </svg>
-                    </a>
-                        <img id="zhifubaoImg" src="./img/zhifubao.jpg" alt="" width="100px" height="100px"
-                             style="position: absolute;top:-80px; left: 0px;display: none"></li>
-                </ul>
-            </footer>
-        </div>
-    </div>
-</main>
-
-<p class="download-warpper">
-    <a href="./李泽泽-2019-前端.pdf" target="_blank" download class="downloadPDF">下载 PDF 简历</a>
-</p>
-<div class="describe">
-    <p>
-        李泽泽，前端开发工程师,目前离职状态，希望找到一份合适的工作
-
-    </p>
-    <p>技能：<strong>前端</strong>开发，<strong>C#</strong>开发，<strong>Java</strong>开发</p>
-</div>
-
-<section class="skills activeTag" id="siteSkills">
-    <h2>技能</h2>
-    <div class="skills-inner">
-        <ul>
-            <li>
-                <h3>HTML</h3>
-                <div class="progressBar">
-                    <div class="progress"></div>
-                </div>
-            </li>
-            <li>
-                <h3>HTML</h3>
-                <div class="progressBar">
-                    <div class="progress"></div>
-                </div>
-            </li>
-            <li>
-                <h3>HTML</h3>
-                <div class="progressBar">
-                    <div class="progress"></div>
-                </div>
-            </li>
-            <li>
-                <h3>HTML</h3>
-                <div class="progressBar">
-                    <div class="progress"></div>
-                </div>
-            </li>
-            <li>
-                <h3>HTML</h3>
-                <div class="progressBar">
-                    <div class="progress"></div>
-                </div>
-            </li>
-            <li>
-                <h3>HTML</h3>
-                <div class="progressBar">
-                    <div class="progress"></div>
-                </div>
-            </li>
-        </ul>
-    </div>
-</section>
-<section class="works activeTag" id="siteWork">
-    <div class="works-inner">
-        <h2>作品</h2>
-        <div style="display: inline-block">
-            <nav>
-                <ul>
-                    <li id="framework1">全部</li>
-                    <li id="framework2">框架</li>
-                    <li id="framework3">源生JS</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">日历 </a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">其他 </a></li>
                 </ul>
             </nav>
-            <div class="bar">
-                <div id="workBar" class="bar-inner state-1"></div>
-            </div>
-        </div>
-        <div class="items" style="height: 580px">
-            <div class="big" style="left: 0;top: 0;">
-                <img src="./img/1.jpg" alt="" width="600" height="580">
-            </div>
-            <div class="small" style="left: 638px">
-                <img src="./img/2.jpg" alt="" width="287px">
-            </div>
-            <div class="small" style="left: 638px;top: 302px;">
-                <img src="./img/3.jpg" alt="">
-            </div>
         </div>
     </div>
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
+    <main>
+        <div class="card-container " id="siteAbout">
+            <div class="card">
+                <div class="profile-container">
 
-</section>
+
+
+                    <div class="img"><img src="./img/person.jpg" height="317px" alt=""></div>
+                    <div class="profile">
+                        <span class="welcome">Hello
+                    <span class="triangle"></span></span>
+                        <h1>李泽泽</h1>
+                        <p>前端开发工程师</p>
+                        <hr style="margin-top: 20px">
+                        <ul>
+                            <li>24</li>
+                            <li>北京市</li>
+                            <li>18622321433</li>
+                            <li>18622321433@163.com</li>
+                            <li>本科(非统招学信网可查)</li>
+                        </ul>
+                    </div>
+                </div>
+                <footer class="media">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/lizeze" target="_blank">
+                                <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-github"></use>
+                        </svg>
+                            </a>
+                        </li>
+                        <li id="weixinBar" style="position: relative">
+                            <a href="javascript:void(0)">
+                                <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-weixin"></use>
+                            </svg>
+                            </a>
+                            <img id="weixinImg" src="./img/weixin.jpg" alt="" width="100px" height="100px" style="position: absolute;top:-80px; left: 0px;display: none">
+
+                        </li>
+                        <li id="qqBar" style="position: relative">
+                            <a href="javascript:void(0)">
+                                <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-qq-copy-copy"></use>
+                        </svg>
+                            </a>
+                            <img id="qqImg" src="./img/qq.jpg" alt="" width="100px" height="100px" style="position: absolute;top:-80px; left: 0px;display: none"></li>
+                        <li>
+                            <a href="https://www.zhihu.com/people/ze-ze-6-77/posts" target="_blank">
+                                <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-zhihu"></use>
+                        </svg>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://juejin.im/user/5b2c545ce51d4558af402efa" target="_blank">
+                                <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-juejin"></use>
+                        </svg>
+                            </a>
+                        </li>
+                        <li id="zhifubaoBar" style="position: relative">
+                            <a href="#">
+                                <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-zhifubao"></use>
+                        </svg>
+                            </a>
+                            <img id="zhifubaoImg" src="./img/zhifubao.jpg" alt="" width="100px" height="100px" style="position: absolute;top:-80px; left: 0px;display: none"></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+    <p class="download-warpper">
+        <a href="./李泽泽-2019-前端.pdf" target="_blank" download class="downloadPDF">下载 PDF 简历</a>
+    </p>
+    <div class="describe">
+        <p>
+            李泽泽，前端开发工程师,目前离职状态，希望找到一份合适的工作
+
+        </p>
+        <p>技能：<strong>前端</strong>开发，<strong>C#</strong>开发，<strong>Java</strong>开发</p>
+    </div>
+
+    <section class="skills activeTag" id="siteSkills">
+        <h2>技能</h2>
+        <div class="skills-inner">
+            <ul>
+                <li>
+                    <h3>HTML</h3>
+                    <div class="progressBar">
+                        <div class="progress"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>HTML</h3>
+                    <div class="progressBar">
+                        <div class="progress"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>HTML</h3>
+                    <div class="progressBar">
+                        <div class="progress"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>HTML</h3>
+                    <div class="progressBar">
+                        <div class="progress"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>HTML</h3>
+                    <div class="progressBar">
+                        <div class="progress"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>HTML</h3>
+                    <div class="progressBar">
+                        <div class="progress"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="works activeTag" id="siteWork">
+        <div class="works-inner">
+            <h2>作品</h2>
+            <div style="display: inline-block">
+                <nav>
+                    <ul>
+                        <li id="framework1">全部</li>
+                        <li id="framework2">框架</li>
+                        <li id="framework3">源生JS</li>
+                    </ul>
+                </nav>
+                <div class="bar">
+                    <div id="workBar" class="bar-inner state-1"></div>
+                </div>
+            </div>
+            <div class="items" style="height: 580px">
+                <div class="big" style="left: 0;top: 0;">
+                    <img src="./img/1.jpg" alt="" width="600" height="580">
+                </div>
+                <div class="small" style="left: 638px">
+                    <img src="./img/2.jpg" alt="" width="287px">
+                </div>
+                <div class="small" style="left: 638px;top: 302px;">
+                    <img src="./img/3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
 </body>
 <script>
-
-     setTimeout(function () {
+    setTimeout(function() {
         loading.classList.remove('active')
 
-     }, 1000 * 1)
+    }, 1000 * 1)
 </script>
 <script src="./lib/jquery.min.js"></script>
 <script src="./js/index.js"></script>
 <script src="./lib/font/iconfont.js"></script>
 <script src="./lib/Tween.min.js"></script>
+
 </html>
